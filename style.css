@@ -1,0 +1,386 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background: rgba(12, 4, 4, 0.911);
+}
+
+.main-wrapper {
+    display: flex;
+    position: absolute;
+    transform-style: preserve-3d;
+    perspective: 400px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.shere-wrapper {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate3d 10s linear infinite;
+}
+
+.plane {
+    position: absolute;
+    transform-style: preserve-3d;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.spoke {
+    width: 0;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: 0 0;
+}
+
+.dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+    left: -3px;
+    top: 100%;
+    transform: rotateX(90deg);
+}
+
+.spoke-1 {
+    transform: rotateZ(10deg);
+}
+
+.spoke-2 {
+    transform: rotateZ(20deg);
+}
+
+.spoke-3 {
+    transform: rotateZ(30deg);
+}
+
+.spoke-4 {
+    transform: rotateZ(40deg);
+}
+
+.spoke-5 {
+    transform: rotateZ(50deg);
+}
+
+.spoke-6 {
+    transform: rotateZ(60deg);
+}
+
+.spoke-7 {
+    transform: rotateZ(70deg);
+}
+
+.spoke-8 {
+    transform: rotateZ(80deg);
+}
+
+.spoke-9 {
+    transform: rotateZ(90deg);
+}
+
+.spoke-10 {
+    transform: rotateZ(100deg);
+}
+
+.spoke-11 {
+    transform: rotateZ(110deg);
+}
+
+.spoke-12 {
+    transform: rotateZ(120deg);
+}
+
+.spoke-13 {
+    transform: rotateZ(130deg);
+}
+
+.spoke-14 {
+    transform: rotateZ(140deg);
+}
+
+.spoke-15 {
+    transform: rotateZ(150deg);
+}
+
+.spoke-16 {
+    transform: rotateZ(160deg);
+}
+
+.spoke-17 {
+    transform: rotateZ(170deg);
+}
+
+.spoke-18 {
+    transform: rotateZ(180deg);
+}
+
+.spoke-19 {
+    transform: rotateZ(190deg);
+}
+
+.spoke-20 {
+    transform: rotateZ(200deg);
+}
+
+.spoke-21 {
+    transform: rotateZ(210deg);
+}
+
+.spoke-22 {
+    transform: rotateZ(220deg);
+}
+
+.spoke-23 {
+    transform: rotateZ(230deg);
+}
+
+.spoke-24 {
+    transform: rotateZ(240deg);
+}
+
+.spoke-25 {
+    transform: rotateZ(250deg);
+}
+
+.spoke-26 {
+    transform: rotateZ(260deg);
+}
+
+.spoke-27 {
+    transform: rotateZ(270deg);
+}
+
+.spoke-28 {
+    transform: rotateZ(280deg);
+}
+
+.spoke-29 {
+    transform: rotateZ(290deg);
+}
+
+.spoke-30 {
+    transform: rotateZ(300deg);
+}
+
+.spoke-31 {
+    transform: rotateZ(310deg);
+}
+
+.spoke-32 {
+    transform: rotateZ(320deg);
+}
+
+.spoke-33 {
+    transform: rotateZ(330deg);
+}
+
+.spoke-34 {
+    transform: rotateZ(340deg);
+}
+
+.spoke-35 {
+    transform: rotateZ(350deg);
+}
+
+.plane-1 {
+    transform: rotateY(15deg)
+}
+
+.plane-2 {
+    transform: rotateY(30deg)
+}
+
+.plane-3 {
+    transform: rotateY(45deg)
+}
+
+.plane-4 {
+    transform: rotateY(60deg)
+}
+
+.plane-5 {
+    transform: rotateY(75deg)
+}
+
+.plane-6 {
+    transform: rotateY(90deg)
+}
+
+.plane-7 {
+    transform: rotateY(105deg)
+}
+
+.plane-8 {
+    transform: rotateY(120deg)
+}
+
+.plane-9 {
+    transform: rotateY(135deg)
+}
+
+.plane-10 {
+    transform: rotateY(150deg)
+}
+
+.plane-11 {
+    transform: rotateY(165deg)
+}
+
+.plane-12 {
+    transform: rotateY(180deg)
+}
+
+@keyframes rotate3d {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    25% {
+        transform: rotate3d(1, 1, 1, 90deg);
+    }
+    50% {
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+    75% {
+        transform: rotate3d(1, 1, 1, 270deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: rotateX(90deg) scale(0.3) translateZ(20px);
+    }
+    90% {
+        transform: rotateX(90deg) scale(1) translateZ(0px);
+    }
+}
+
+.spoke-36 .dot {
+    background: #ff9955;
+    animation: pulse 0.5s infinite 0s alternate both;
+}
+
+.spoke-1 .dot,
+.spoke-35 .dot {
+    background: #ffb555;
+    animation: pulse 0.5s infinite 0.55s alternate both;
+}
+
+.spoke-2 .dot,
+.spoke-34 .dot {
+    background: #ffb555;
+    animation: pulse 0.5s infinite 0.11s alternate both;
+}
+
+.spoke-3 .dot,
+.spoke-33 .dot {
+    background: #ffb255;
+    animation: pulse 0.5s infinite 0.16s alternate both;
+}
+
+.spoke-4 .dot,
+.spoke-32 .dot {
+    background: #ffff55;
+    animation: pulse 0.5s infinite 0.22s alternate both;
+}
+
+.spoke-5 .dot,
+.spoke-31 .dot {
+    background: #d7ff55;
+    animation: pulse 0.5s infinite 0.22s alternate both;
+}
+
+.spoke-6 .dot,
+.spoke-30 .dot {
+    background: #bbff55;
+    animation: pulse 0.5s infinite 0.33s alternate both;
+}
+
+.spoke-7 .dot,
+.spoke-29 .dot {
+    background: #9fff55;
+    animation: pulse 0.5s infinite 0.38s alternate both;
+}
+
+.spoke-8 .dot,
+.spoke-28 .dot {
+    background: #82ff55;
+    animation: pulse 0.5s infinite 0.44s alternate both;
+}
+
+.spoke-9 .dot,
+.spoke-27 .dot {
+    background: #66ff55;
+    animation: pulse 0.5s infinite 0.5s alternate both;
+}
+
+.spoke-10 .dot,
+.spoke-26 .dot {
+    background: #55ff55;
+    animation: pulse 0.5s infinite 0.5s alternate both;
+}
+
+.spoke-11 .dot,
+.spoke-25 .dot {
+    background: #55ff7d;
+    animation: pulse 0.5s infinite 0.61s alternate both;
+}
+
+.spoke-12 .dot,
+.spoke-24 .dot {
+    background: #55ff99;
+    animation: pulse 0.5s infinite 0.66s alternate both;
+}
+
+.spoke-13 .dot,
+.spoke-23 .dot {
+    background: #55ffb5;
+    animation: pulse 0.5s infinite 0.72s alternate both;
+}
+
+.spoke-14 .dot,
+.spoke-22 .dot {
+    background: #55ffd2;
+    animation: pulse 0.5s infinite 0.77s alternate both;
+}
+
+.spoke-15 .dot,
+.spoke-21 .dot {
+    background: #55ffee;
+    animation: pulse 0.5s infinite 0.83s alternate both;
+}
+
+.spoke-16 .dot,
+.spoke-20 .dot {
+    background: #55f4ff;
+    animation: pulse 0.5s infinite 0.88s alternate both;
+}
+
+.spoke-17 .dot,
+.spoke-19 .dot {
+    background: #55d7ff;
+    animation: pulse 0.5s infinite 0.94s alternate both;
+}
+
+.spoke-18 .dot {
+    background: #55bbff;
+    animation: pulse 0.5s infinite 1s alternate both;
+}
